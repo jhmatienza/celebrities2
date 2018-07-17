@@ -1,0 +1,18 @@
+<form
+  data-errors='{{{ json errors }}}'
+  action='/comments/create'
+  method="post">
+
+  <input name="celebrity" value="{{celebrity._id}}" type="hidden">
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" value="{{ comment.title }}">
+  </div>
+
+  <div class="form-group">
+    <textarea class="form-control" name="text" id="text" rows="6">{{ comment.text}}</textarea>
+  </div>
+
+  <button type="submit" class="btn btn-success">Create</button>
+</form>

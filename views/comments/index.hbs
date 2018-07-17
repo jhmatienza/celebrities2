@@ -1,0 +1,6 @@
+{{#each comments as |comment| }}
+  <dl>
+    <dt><small>{{ datetime comment.createdAt }} - </small> {{ comment.title }}</dt>
+    <dd>{{ comment.text }}</dd>
+  </dl>
+{{/each}}

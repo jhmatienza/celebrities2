@@ -1,0 +1,7 @@
+<h1 class="mb-4">Celebrities</h1>
+
+<a class="btn btn-success mb-3" href="/celebrities/create">New</a>
+
+{{# each celebrities as |celebrity| }}
+  {{> celebrities/celebrity celebrity }}
+{{/each }}

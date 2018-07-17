@@ -1,0 +1,29 @@
+{
+  "name": "celebrities",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "DEBUG=celebrities:* nodemon -e hbs,js debug ./bin/www",
+    "seed": "node ./bin/seeds"
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "moment": "^2.22.2",
+    "mongoose": "^5.1.6",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.6.7",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "nodemon": "^1.17.5"
+  }
+}

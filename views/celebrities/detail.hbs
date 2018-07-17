@@ -1,0 +1,11 @@
+<a class="btn btn-secondary mb-3" href="/celebrities">Go Back</a>
+
+{{> celebrities/celebrity celebrity }}
+
+<h4>Comments</h4>
+
+{{> comments/index comments=celebrity.comments }}
+
+<hr>
+
+{{> comments/form }}
